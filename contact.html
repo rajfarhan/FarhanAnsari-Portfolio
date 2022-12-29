@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Contact us Page</title>
+    <link rel="stylesheet" href="css/nicepage.css">
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+
+
+
+</head>
+<body>
+    <section class="contactus">
+        <div class="content">
+            <h2>Contact Me</h2>
+            <p>Hi My Name is Farhan Ansari .If you have any query please get in touch with me.
+            </p>
+        </div>
+        <div class="container">
+            <div  class="contactInfo">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-square-rss"></i>
+                    </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Ranchi <br> Jharkhand <br> India</p>
+                        </div>
+                </div>
+            
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+91- 827-116-9757</p>
+                        </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>rajfarhan462@gmail com</p>
+                        </div>
+                </div>
+            </div>
+            <div class="contactform">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputbox">
+                        <input type="text" name="" id="name" required="required">
+                        <span> Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="" id="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea id="message" required="required"></textarea>
+                        <span>Type your message...</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="button" onclick="sendmail()" name="" value="Send">
+                        
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <script>
+
+        function sendmail(){
+        Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "farhanhero92@gmail.com",
+    Password : "8733A3E79860CD8D2AA00A995062BD16BCE4",
+    To : 'rajfarhan462@gmail.com',
+    From : "farhanhero92@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+
+        }
+    </script>
+    
+</body>
+</html>

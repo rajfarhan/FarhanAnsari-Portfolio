@@ -1,0 +1,3 @@
+SMTP
+user-farhandemo@elastice.com
+pass-F65F101AF11A6604563919FE089B8EF9EF22
